@@ -3,13 +3,13 @@
 This DataOrientedQuestManager is a highly efficient, template-based quest management system designed for games, capable of handling a fixed number of quests concurrently. It provides functionality to add, start, update, and complete quests, with each quest's progress tracked through item counts and statuses. Optimized for performance, it uses fixed-size arrays to minimize dynamic memory allocation and offers methods like StartAllQuests to operate on multiple quests simultaneously. Ideal for developers looking for a scalable, data-oriented approach to quest management in their games.
 
 ```cpp
-  DataOrientedQuestManager<2> QuestManager;
-	QuestManager.AddQuest("Quest1",5);
-	QuestManager.AddQuest("Quest2",10);
-	QuestManager.StartAllQuests();
-	QuestManager.StartQuestSystem();
-	QuestManager.IncrementQuestItemCount("Quest1",1);
-	QuestManager.IncrementQuestItemCount("Quest1",1);
+DataOrientedQuestManager<2> QuestManager;
+QuestManager.AddQuest("Quest1",5);
+QuestManager.AddQuest("Quest2",10);
+QuestManager.StartAllQuests();
+QuestManager.StartQuestSystem();
+QuestManager.IncrementQuestItemCount("Quest1",1);
+QuestManager.IncrementQuestItemCount("Quest1",1);
 
 ```
 
